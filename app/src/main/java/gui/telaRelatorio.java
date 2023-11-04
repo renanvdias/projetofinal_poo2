@@ -209,22 +209,17 @@ public class telaRelatorio extends javax.swing.JFrame {
                        if (page > 0) {
                            return NO_SUCH_PAGE;
                        }
-
-                       // Obtenha o texto do TextArea para impressão
                        String textoParaImprimir = areaRelatorio.getText();
 
-                       // Quebre as linhas com base no caractere de nova linha (\n)
                        String[] linhas = textoParaImprimir.split("\n");
 
-                       // Configure a área de impressão e renderize as linhas do texto
                        Graphics2D g2d = (Graphics2D) g;
                        g2d.translate(pf.getImageableX(), pf.getImageableY());
-                       int y = 100; // Posição vertical inicial
+                       int y = 100;
                        for (String linha : linhas) {
-                           g2d.drawString(linha, 100, y); // Ajuste as coordenadas conforme necessário
-                           y += 20; // Ajuste o espaço vertical entre as linhas conforme necessário
+                           g2d.drawString(linha, 100, y);
+                           y += 20;
                        }
-
                        return PAGE_EXISTS;
                    }
                });
