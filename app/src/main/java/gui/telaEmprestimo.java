@@ -25,9 +25,6 @@ public class telaEmprestimo extends javax.swing.JFrame {
     ComboBoxFactory comboBoxFactory = new ComboBox();
     DefaultComboBoxModel<String> usuariosModel = comboBoxFactory.criarModeloUsuarios();
     DefaultComboBoxModel<String> livrosModel = comboBoxFactory.criarModeloLivros();
-    /**
-     * Creates new form telaLivro
-     */
     public telaEmprestimo() {
         initComponents();
         comboboxUsuarios.setModel(usuariosModel);
