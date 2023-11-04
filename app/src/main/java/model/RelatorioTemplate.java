@@ -4,7 +4,7 @@ import java.util.Date;
 import java.util.List;
 
 public abstract class RelatorioTemplate {
-        protected abstract String gerarCabecalho();
+    protected abstract String gerarCabecalho();
 
     protected abstract String gerarConteudo();
 
