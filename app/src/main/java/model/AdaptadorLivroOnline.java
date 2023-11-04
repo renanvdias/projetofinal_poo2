@@ -2,8 +2,8 @@ package model;
 public class AdaptadorLivroOnline implements LivroOnlineAdapter {
     private GoogleBooksService googleBooksService;
 
-    public AdaptadorLivroOnline() {
-        this.googleBooksService = new GoogleBooksService();
+ public AdaptadorLivroOnline(GoogleBooksService googleBooksService) {
+        this.googleBooksService = googleBooksService;
     }
 
     @Override

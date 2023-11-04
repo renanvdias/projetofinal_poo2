@@ -216,7 +216,8 @@ public class telaLivro extends javax.swing.JFrame {
     }//GEN-LAST:event_botaoLivros1ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        LivroOnlineAdapter buscaLivro = new AdaptadorLivroOnline();
+        GoogleBooksService googleBooksService = new GoogleBooksService();
+        LivroOnlineAdapter buscaLivro = new AdaptadorLivroOnline(googleBooksService);
         Livro livro = buscaLivro.buscarLivroOnlinePorISBN(idTextField.getText());
     if (livro != null) {
          tituloTextField.setText(livro.getTitulo());
