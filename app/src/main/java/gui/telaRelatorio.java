@@ -181,7 +181,7 @@ public class telaRelatorio extends javax.swing.JFrame {
 
     private void botaoLivrosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoLivrosActionPerformed
         BibliotecaManager bibliotecaManager = BibliotecaManager.getInstance();
-        RelatorioLivros relatorioLivros = new RelatorioLivros(bibliotecaManager.getLivros()); // Substitua "listaDeLivros" pela sua lista real de livros
+        RelatorioLivros relatorioLivros = new RelatorioLivros(bibliotecaManager.getLivros());
         String relatorio = relatorioLivros.gerarRelatorio();
         areaRelatorio.setText(relatorio);
     }//GEN-LAST:event_botaoLivrosActionPerformed
@@ -194,7 +194,7 @@ public class telaRelatorio extends javax.swing.JFrame {
 
     private void botaoLivros2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoLivros2ActionPerformed
         BibliotecaManager bibliotecaManager = BibliotecaManager.getInstance();
-        RelatorioEmprestimos relatorioEmprestimos = new RelatorioEmprestimos(bibliotecaManager.getEmprestimos()); // Substitua "listaDeLivros" pela sua lista real de livros
+        RelatorioEmprestimos relatorioEmprestimos = new RelatorioEmprestimos(bibliotecaManager.getEmprestimos());
         String relatorio = relatorioEmprestimos.gerarRelatorio();
         areaRelatorio.setText(relatorio);
     }//GEN-LAST:event_botaoLivros2ActionPerformed
