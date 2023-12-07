@@ -6,4 +6,7 @@ O Star Library é um sistema que visa facilitar o controle e cadastro de emprés
 
 O sistema é composto por 7 telas navegavéis, onde é possível cadastrar livros (com possibilidade de usar a busca de livro por ISBN), cadastrar usuários, registrar empréstimos, devolver um livro, listar por meio de uma tabela todos os livros cadastrados e empréstimos efetuados e gerar relatórios para imprimir (ou gerar PDF).
 
+# Tecnologias Usadas
+As tecnologias usadas nesse projeto são: Java, Java Swing e a utlização de API de terceiros
+
 ![](https://i.imgur.com/y0USrDE.png) ![](https://i.imgur.com/Dt6BwCC.png)
